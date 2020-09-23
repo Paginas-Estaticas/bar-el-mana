@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="pub-gallery container">
+    <h1 class="title-gallery">Galeria de Fotos</h1>
+    <hr>
+</div>
+
+<div class="content-fluid">
+    <div class="content-gallery justify-content-center row row-cols-1 row-cols-md-3">
+        {% for file in site.static_files %}
+            {% if file.image %}
+        <a target="_blank" href="{{ site.baseurl }}{{ file.path }}">
+            <div class="images-gallery col">
+                <img src="{{ site.baseurl }}{{ file.path }}">
+            </div>
+        </a>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>

@@ -1,6 +1,6 @@
 #!/usr/bin/make
 
-.DEFAULT_GOAL := serve
+.DEFAULT_GOAL := build
 
 MAKEFILE_DIR := $(patsubst %/,%,$(dir $(abspath $(lastword ${MAKEFILE_LIST}))))
 
