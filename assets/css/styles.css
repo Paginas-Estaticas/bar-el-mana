@@ -43,6 +43,9 @@ body {
 
 .button2 {
     margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .button2:hover {
@@ -50,8 +53,6 @@ body {
     width: 40px;
     background-size: 60px;
     opacity: 0.5;
-    transition: ease 500ms;
-    margin-left: -20px;
     width: 105px;
 }
 
@@ -131,26 +132,26 @@ body {
 
 /*menu*/
 
-.pub-menu {
-    margin-top: 200px;
-    text-align: center;
+.banner-carta {
+    margin-top: 180px;
+    margin-bottom: 30px;
+    height: auto;
+    width: 1890px;
+    margin-left: 5px;
 }
 
 .title-menu {
-    margin-bottom: 40px;
-    margin-top: 40px;
+    position: absolute;
+    top: 230px;
+    left: 800px;
+    font-size: 50px;
 }
 
-
-.images-menu img {
-    margin-bottom: 20px;
-    margin-top: 20px;
-    margin-left: 70px;
-    object-fit: cover;
-    height: auto;
-    width: 800px;
-    text-align: center;
+.carta {
+    width: 920px;
+    margin-bottom: 30px;
 }
+
 /*end menu*/
 
 
@@ -192,88 +193,26 @@ body {
 
 
 /*SOCIAL MEDIA ICONS*/
-.social-buttoms {
-    margin-left: 500px;
-}
-
 
 .social-buttons {
-    top: 30%;
-    height: 200px;
-    width: 60px;
-    position: fixed;
-    right: 0;
+   margin-top: 20px;
+   text-align:center;
 }
 
 .facebook {
-    height: 50px;
-    width: 50px;
-    transition: ease 500ms;
-    background-size: 50px;
-    opacity: 1;
-}
-
-.facebook:hover {
-    height: 50px;
-    width: 50px;
-    background-size: 60px;
-    opacity: 0.5;
-    transition: ease 500ms;
-    margin-left: -20px;
-    width: 70px;
+    width: 40px;
 }
 
 .instagram {
-    height: 50px;
-    width: 50px;
-    transition: ease 500ms;
-    background-size: 50px;
-    opacity: 1;
-}
-
-.instagram:hover {
-    height: 50px;
-    width: 50px;
-    background-size: 60px;
-    opacity: 0.5;
-    transition: ease 500ms;
-    margin-left: -20px;
-    width: 70px;
+    width: 40px;
 }
 
 .tripadvisor {
-    height: 50px;
-    width: 50px;
-    transition: ease 500ms;
-    background-size: 50px;
-    opacity: 1;
-}
-
-.tripadvisor:hover {
-    height: 50px;
-    width: 50px;
-    background-size: 60px;
-    opacity: 0.5;
-    transition: ease 500ms;
-    margin-left: -20px;
-    width: 70px;
+    width: 40px;
 }
 
 .whatsapp {
-    height: 50px;
-    width: 50px;
-    transition: ease 500ms;
-    background-size: 50px;
-    opacity: 1;
+    width: 40px;
 }
 
-.whatsapp:hover {
-    height: 50px;
-    width: 50px;
-    background-size: 60px;
-    opacity: 0.5;
-    transition: ease 500ms;
-    margin-left: -20px;
-    width: 70px;
-}
 /*END SOCIAL MEDIA ICONS*/
