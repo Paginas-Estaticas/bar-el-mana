@@ -6,7 +6,6 @@ body {
 
 .navbar {
     background-color: black;
-    background-image: linear-gradient(to right, black , grey);
 }
 
 #logo {
@@ -26,6 +25,10 @@ body {
     margin-right: 50px;
 }
 
+li a:hover {
+  background-color: grey;
+}
+
 /*END HEADER*/
 
 
@@ -37,7 +40,7 @@ body {
     padding-bottom: 20px;
 }
 
-.three-elements {
+.position-content {
     text-align: center;
 }
 
@@ -56,17 +59,18 @@ body {
     width: 105px;
 }
 
-.cicle-beers {
-    box-shadow: 0 0 20px;
+.circle-beers {
+    box-shadow: 0 0 20px #BDB78B;
 }
 
-.cicle-cocktails {
-    box-shadow: 0 0 20px;
+.circle-cocktails {
+    box-shadow: 0 0 20px #F3A4EE;
 }
 
-.cicle-wines {
-    box-shadow: 0 0 20px;
+.circle-wines {
+    box-shadow: 0 0 20px #A1E0D0;
 }
+
 
 .main-contact {
     margin-top: 200px;
@@ -76,7 +80,7 @@ body {
 
 /*about-us*/
 .pub-about-us {
-    margin-top: 200px;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 
@@ -85,13 +89,13 @@ body {
 }
 
 .image-about-us {
-    margin-left: 400px;
-    box-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px darkblue;
+    margin-left: 200px;
+    box-shadow: 1px 1px 2px black, 0 0 20px black, 0 0 5px darkblue;
 }
 
 .description-about-us {
-    margin-left: 50px;
     margin-top: 50px;
+    text-align: center;
 }
 /*about-us*/
 
@@ -147,12 +151,52 @@ body {
     font-size: 50px;
 }
 
+.pub-menu {
+    margin-top: 200px;
+    text-align: center;
+}
+
 .carta {
     width: 920px;
     margin-bottom: 30px;
 }
 
 /*end menu*/
+
+.featurette-divider {
+    background-color: #752CB2;
+    height: 1px;
+}
+
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
 
 
 /*END MAIN CONTENT*/
@@ -170,7 +214,6 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-color: black;
-  background-image: linear-gradient(to left, black , grey);
 }
 
 .panel-footer div.row {
@@ -178,7 +221,7 @@ body {
 }
 #hours, #address {
   line-height: 2;
-  color: white;
+  color: #F3A4EE;
   text-align: center;
 }
 #hours > span, #address > span {
