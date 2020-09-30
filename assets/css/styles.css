@@ -140,11 +140,13 @@ li a:hover {
 @media only screen and (max-width: 600px) {
   #img-contact, #img-reservation {
     width: 200px;
+    margin-top: 100px;
   }
 
   .pub-menu img {
     width: 300px;
     text-align: center;
+    margin-top: 100px;
   }
 
   .pub-about-us {
@@ -154,6 +156,7 @@ li a:hover {
 
   .header-gallery img {
     width: 300px;
+    margin-top: 100px;
   }
 
   .set-gallery {
