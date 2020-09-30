@@ -71,10 +71,6 @@ li a:hover {
     margin-bottom: 50px;
 }
 
-.title-about-us {
-    margin-left: 50px;
-}
-
 .image-about-us {
     box-shadow: 1px 1px 2px black, 0 0 20px black, 0 0 5px darkblue;
 }
@@ -93,11 +89,6 @@ li a:hover {
 
 .images-gallery:hover {
     border: 3px solid #E889F0;
-}
-
-.title-gallery {
-    margin-bottom: 40px;
-    margin-top: 40px;
 }
 
 .content-gallery {
@@ -152,24 +143,27 @@ li a:hover {
   }
 
   .pub-menu img {
-    width: 400px;
+    width: 300px;
+    text-align: center;
   }
 
   .pub-about-us {
-    width: 400px;
+    width: 300px;
+    text-align: center;
   }
 
   .header-gallery img {
-    width: 400px;
+    width: 300px;
   }
 
   .set-gallery {
-    width: 470px;
+    width: 400px;
+    text-align: center;
    }
 
   .position-content img {
-    width: 400px;
-    height: 350px;
+    width: 300px;
+    height: 250px;
   }
 
   .position-content .img-disco {
@@ -178,7 +172,7 @@ li a:hover {
   }
 
   iframe {
-    width: 400px;
+    width: 300px;
   }
 }
 
@@ -208,8 +202,7 @@ li a:hover {
 /* FOOTER */
 .footer {
   padding-top: 35px;
-  padding-bottom: 30px;
-  margin-bottom: 0px;
+  object-fit: cover;
   margin-top: 100px;
   background-color: #404040;
   background-size: cover;
@@ -217,9 +210,7 @@ li a:hover {
   background-color: black;
 }
 
-.panel-footer div.row {
-  margin-bottom: 35px;
-}
+
 #hours, #address {
   line-height: 2;
   color: #F3A4EE;
