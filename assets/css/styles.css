@@ -59,19 +59,6 @@ li a:hover {
     width: 105px;
 }
 
-.circle-beers {
-    box-shadow: 0 0 20px #BDB78B;
-}
-
-.circle-cocktails {
-    box-shadow: 0 0 20px #F3A4EE;
-}
-
-.circle-wines {
-    box-shadow: 0 0 20px #A1E0D0;
-}
-
-
 .main-contact {
     margin-top: 200px;
     margin-bottom: 50px;
@@ -89,7 +76,6 @@ li a:hover {
 }
 
 .image-about-us {
-    margin-left: 200px;
     box-shadow: 1px 1px 2px black, 0 0 20px black, 0 0 5px darkblue;
 }
 
@@ -100,7 +86,7 @@ li a:hover {
 /*about-us*/
 
 /*gallery*/
-.pub-gallery {
+.header-gallery {
     margin-top: 200px;
     text-align: center;
 }
@@ -157,8 +143,43 @@ li a:hover {
 }
 
 .carta {
-    width: 920px;
-    margin-bottom: 30px;
+    height: 550px;
+}
+
+@media only screen and (max-width: 600px) {
+  #img-contact, #img-reservation {
+    width: 200px;
+  }
+
+  .pub-menu img {
+    width: 400px;
+  }
+
+  .pub-about-us {
+    width: 400px;
+  }
+
+  .header-gallery img {
+    width: 400px;
+  }
+
+  .set-gallery {
+    width: 470px;
+   }
+
+  .position-content img {
+    width: 400px;
+    height: 350px;
+  }
+
+  .position-content .img-disco {
+    width: 200px;
+    height: 200px;
+  }
+
+  iframe {
+    width: 400px;
+  }
 }
 
 /*end menu*/
@@ -168,39 +189,19 @@ li a:hover {
     height: 1px;
 }
 
+/*   .circle-beers { */
+/*     box-shadow: 0 0 20px #BDB78B; */
+/*   } */
 
-/* For desktop: */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+/*   .circle-cocktails { */
+/*     box-shadow: 0 0 20px #F3A4EE; */
+/*   } */
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
-}
-
-
-
-
-
-
-
-
-
+/*   .circle-wines { */
+/*     box-shadow: 0 0 20px #A1E0D0; */
+/*   } */
 
 /*END MAIN CONTENT*/
-
 
 
 

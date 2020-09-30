@@ -2,13 +2,13 @@
 layout: default
 ---
 
-<div class="pub-gallery container">
+<div class="header-gallery container">
     <img src="assets/images/galeria.png">
     <hr class="featurette-divider">
 </div>
 
-<div class="content-fluid">
-    <div class="content-gallery justify-content-center row row-cols-1 row-cols-md-3">
+<div class="set-gallery content-fluid">
+    <div class="content-gallery row row-cols-1 row-cols-md-3">
         {% for file in site.static_files %}
             {% if file.image %}
         <a target="_blank" href="{{ site.baseurl }}{{ file.path }}">
