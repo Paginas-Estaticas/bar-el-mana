@@ -139,30 +139,30 @@ li a:hover {
 
 @media only screen and (max-width: 600px) {
   #img-contact, #img-reservation {
-    width: 200px;
+    width: 50%;
   }
 
   .pub-menu img {
-    width: 300px;
+    width: 100%;
     text-align: center;
   }
 
   .pub-about-us {
-    width: 300px;
+    width: 100%;
     text-align: center;
   }
 
   .header-gallery img {
-    width: 300px;
+    width: 100%;
   }
 
   .set-gallery {
-    width: 400px;
+    width: 100%;
     text-align: center;
    }
 
   .position-content img {
-    width: 300px;
+    width: 100%;
     height: 250px;
   }
 
@@ -176,7 +176,7 @@ li a:hover {
   }
 
   iframe {
-    width: 300px;
+    width: 100%;
   }
 }
 
