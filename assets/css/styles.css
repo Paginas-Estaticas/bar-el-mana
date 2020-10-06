@@ -29,6 +29,7 @@ li a:hover {
   background-color: grey;
 }
 
+
 /*END HEADER*/
 
 
@@ -174,6 +175,23 @@ li a:hover {
   #logo, #title-index, #sub-title {
     width: 100px;
   }
+
+  .carousel-item {
+    width: 600px;
+    height: 450px;
+    object-fit: cover;
+  }
+
+  #title-index {
+    font-size: 27px;
+    visibility: hidden;
+}
+
+   #sub-title {
+    font-size: 18px;
+    visibility: hidden;
+}
+
 
   iframe {
     width: 100%;
