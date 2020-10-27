@@ -8,7 +8,7 @@
             </div>
         </div>
 
-        <div class="container content-gallery">
+        <div class="container-fluid content-gallery">
             <div class="row row-cols-1 row-cols-md-3">
                 {% for file in site.static_files %}
                 {% if file.path contains include.folder %}
@@ -18,7 +18,7 @@
                 file.extname,"" %}
                 <a target="_blank" href="{{ site.baseurl }}{{ file.path }}" title="{{ filename }}">
                     <div class="images-gallery col-sm-4">
-                        <img src="{{ site.baseurl }}{{ file.path }}" height="200" width="350">
+                        <img src="{{ site.baseurl }}{{ file.path }}" height="200" width="350" class="img-gallery">
                     </div>
                 </a>
                 {% endif %}

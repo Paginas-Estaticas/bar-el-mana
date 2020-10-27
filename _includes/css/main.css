@@ -82,7 +82,7 @@ hr.flamingo-black {
 }
 
 hr.flamingo-white:after {
-    content: url("../img/flamenco-blanco.png");
+    content: url("{{ site.baseurl }}/img/flamenco-blanco.png");
     display: inline-block;
     position: relative;
     top: -.8em;
@@ -92,7 +92,7 @@ hr.flamingo-white:after {
 }
 
 hr.flamingo-black:after {
-    content: url("../img/flamenco-negro.png");
+    content: url("{{ site.baseurl }}/img/flamenco-negro.png");
     display: inline-block;
     position: relative;
     top: -.8em;
@@ -300,6 +300,10 @@ th, td {
     transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
+.img-gallery {
+    padding-right: 45px;
+}
+
 .content-gallery {
     padding-left: 40px;
 }
@@ -339,7 +343,7 @@ th, td {
 }
 
 section {
-    padding-top: 130px;
+    padding-top: 140px;
 }
 
 section h2 {
@@ -354,18 +358,42 @@ section.success {
     margin-top: -30px;
 }
 
-.publications-events {
+.section-events {
     color: #fff;
     background: #{{ site.color.primary }};
     padding-bottom: 100px;
-    padding-top: 100px;
+    padding-bottom: 100px;
     margin-top: 100px;
 }
 
-.card-sorteo {
-    display: block;
-    margin: auto;
+.card-event {
     text-align: center;
+}
+
+.card-title {
+    font-size: 23px;
+
+}
+
+.card-text {
+    font-size: 20px;
+    color: #fff;
+}
+
+.link-color-instagram {
+    color: #{{ site.color.secondary }};
+}
+
+.link-color-instagram:hover {
+    color: white;
+}
+
+.link-color-facebook {
+    color: #{{ site.color.secondary }};
+}
+
+.link-color-facebook:hover {
+    color: white;
 }
 
 .section-menu {
