@@ -289,6 +289,18 @@ th, td {
 
 }
 
+@media only screen and (max-width: 600px) {
+
+    body {
+        fit-object: cover;
+    }
+
+    html {
+        fit-object: cover;
+        width: 115%;
+    }
+}
+
 .images-gallery {
     padding: 20px;
     transition: transform .2s; /* Animation */
