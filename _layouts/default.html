@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: base
+---
 
-    {% include head.html %}
+{% include nav.html navbar="-second" %}
 
-
-<body>
-
-    {% include header.html %}
-
-    {{  content }}
-
-    {% include footer.html %}
-
-{% include javascript.html %}
-</body>
-
-</html>
+{{ content }}

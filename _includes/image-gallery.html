@@ -1,0 +1,30 @@
+<!-- Gallery Section -->
+<section id="gallery">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Gallery</h2>
+                <hr class="flamingo-black">
+            </div>
+        </div>
+
+        <div class="container content-gallery">
+            <div class="row row-cols-1 row-cols-md-3">
+                {% for file in site.static_files %}
+                {% if file.path contains include.folder %}
+                {% if file.extname == '.jpg' or file.extname == '.jpeg' or file.extname == '.JPG' or file.extname ==
+                '.JPEG' %}
+                {% assign filenameparts = file.path | split: "/" %}{% assign filename = filenameparts | last | replace:
+                file.extname,"" %}
+                <a target="_blank" href="{{ site.baseurl }}{{ file.path }}" title="{{ filename }}">
+                    <div class="images-gallery col-sm-4">
+                        <img src="{{ site.baseurl }}{{ file.path }}" height="200" width="350">
+                    </div>
+                </a>
+                {% endif %}
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

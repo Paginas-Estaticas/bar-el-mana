@@ -1,0 +1,647 @@
+/*!
+ * Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    overflow-x: hidden;
+}
+
+p {
+    font-size: 20px;
+}
+
+p.small {
+    font-size: 16px;
+}
+
+p.letter-small {
+    font-size: 14px;
+    color: #fff;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+    color: #{{ site.color.primary }};
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+hr.separator {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 900px;
+    border: 0;
+    border-top: solid 4px;
+    text-align: center;
+    overflow: visible;
+}
+
+hr.separator:after {
+    content: "El Maná";
+    background-color: #{{ site.color.primary }};
+    opacity: 0.9;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 1.5em;
+    margin-left: 50px;
+}
+
+hr.separator {
+    border-color: #{{ site.color.primary }};
+}
+
+
+hr.flamingo-white,
+hr.flamingo-black {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 5px;
+    text-align: center;
+    overflow: visible;
+}
+
+hr.flamingo-white:after {
+    content: url("../img/flamenco-blanco.png");
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+}
+
+hr.flamingo-black:after {
+    content: url("../img/flamenco-negro.png");
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+}
+
+hr.flamingo-white {
+    border-color: #fff;
+}
+
+hr.flamingo-white:after {
+    color: #fff;
+    background-color: #{{ site.color.primary }};
+}
+
+hr.flamingo-black {
+    border-color: #{{ site.color.secondary }};
+}
+
+hr.flamingo-black:after {
+    color: #{{ site.color.secondary }};
+    background-color: #fff;
+}
+
+.img-centered {
+    margin: 0 auto;
+    height: 200px;
+}
+
+.portfolio-flex-content-beers {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: #{{ site.color.secondary }};; /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  z-index: 2;
+  width: 70%;
+  text-align: center;
+}
+
+.portfolio-flex-content-cocktails {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: #{{ site.color.secondary }};; /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  z-index: 2;
+  width: 70%;
+}
+
+.portfolio-flex-content-wines {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: #{{ site.color.secondary }};; /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  z-index: 2;
+  width: 70%;
+}
+
+.table {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 60%;
+    margin-left: 18%;
+}
+
+.table-beers {
+    width: 100%;
+}
+
+.table2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table-cocktails {
+    width: 100%;
+}
+
+.table3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table-wines {
+    width: 100%;
+}
+
+.margin-p-bottom {
+    margin-bottom: 40px;
+}
+
+tr.bordered {
+    border-bottom: 1px solid #fff;
+}
+
+.price-content {
+    text-align: start;
+}
+
+td. {
+    width: 50%;
+}
+
+th, td {
+    text-align: center;
+    font-size: 19px;
+}
+
+.beers-title {
+    color: white;
+}
+
+.cocktails-title {
+    font-size: 22px;
+    color: white;
+}
+
+.wines-title {
+    color: white;
+}
+
+.logo {
+    visibility: hidden;
+    height: 100%;
+    }
+
+.logo-second {
+    visibility: hidden;
+    height: 10px;
+    margin-top: 50px;
+}
+
+.navbar-brand-second {
+    color: white;
+}
+
+@media(min-width:768px) {
+    .navbar-fixed-top {
+        padding: 25px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+        padding-bottom: 50px;
+    }
+
+    .logo {
+        position: absolute;
+        bottom: 10px;
+        height: 75%;
+        visibility: visible;
+        margin-right: 20px;
+    }
+
+    .navbar-brand {
+        visibility: hidden;
+    }
+
+    .logo-second {
+        position: absolute;
+        bottom: 10px;
+        height: 60%;
+        visibility: visible;
+        margin-right: 20px;
+    }
+
+    .navbar-brand-second {
+        visibility: hidden;
+    }
+
+    .navbar-brand-second {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+        padding-bottom: 50px;
+    }
+
+}
+
+.images-gallery {
+    padding: 20px;
+    transition: transform .2s; /* Animation */
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.images-gallery:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.content-gallery {
+    padding-left: 40px;
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    background-color: transparent !important;
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+
+.navbar.scrolled {
+    background: #2c3e50 !important;
+}
+
+.navbar a:focus {
+    outline: 0;
+}
+
+.navbar .navbar-nav {
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-nav li a:focus {
+    outline: 0;
+}
+
+.navbar-second {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+section {
+    padding-top: 130px;
+}
+
+section h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+section.success {
+    color: #fff;
+    background: #{{ site.color.primary }};
+    padding-bottom: 100px;
+    margin-top: -30px;
+}
+
+.publications-events {
+    color: #fff;
+    background: #{{ site.color.primary }};
+    padding-bottom: 100px;
+    padding-top: 100px;
+    margin-top: 100px;
+}
+
+.card-sorteo {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.section-menu {
+    background-color: #{{ site.color.primary }};
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 20px;
+}
+
+@media(max-width:767px) {
+    section {
+        padding: 75px 0;
+    }
+
+    section.first {
+        padding-top: 75px;
+    }
+}
+
+.portfolio-item {
+    right: 0;
+    margin: 0 0 15px;
+}
+
+.menu-img {
+    width:  100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.img-title-menu {
+    z-index: 100;
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: justify;
+    opacity: 0.9;
+    top: 180%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.portfolio-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba({{ site.color.primary-rgb }},.9);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+.caption:hover {
+    opacity: 1;
+}
+
+.caption-content {
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+i {
+    margin-top: -12px;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+    margin: 0;
+}
+
+#portfolio * {
+    z-index: 2;
+}
+
+@media(min-width:767px) {
+    #portfolio .portfolio-item {
+        margin: 0 0 30px;
+    }
+}
+
+/* Flexbox Portfolio Grid */
+@media (min-width: 640px) {
+    .portfolio-flex-grid .portfolio-flex-row {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: stretch;
+      justify-content: space-between;
+    }
+    .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
+      flex: 1 0 49%;
+      max-width: 49%;
+    }
+  }
+  @media (min-width: 960px) {
+    .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
+      flex: 1 0 32%;
+      max-width: 32%;
+    }
+  }
+  /* A large grid might need four columns on widescreen layouts */
+  /* @media (min-width: 1380px) {
+    .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
+      flex: 1 0 23.5%;
+      max-width: 23.5%;
+    }
+  } */
+
+.btn-outline {
+    margin-top: 15px;
+    border: solid 2px #fff;
+    font-size: 20px;
+    color: #fff;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+}
+
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+    border: solid 2px #fff;
+    color: #{{ site.color.primary }};
+    background: #fff;
+}
+
+footer {
+    color: #fff;
+}
+
+footer h3 {
+    margin-bottom: 30px;
+}
+
+footer .footer-above {
+    padding-top: 50px;
+    background-color: #{{ site.color.secondary }};
+}
+
+footer .footer-col {
+    margin-bottom: 50px;
+}
+
+footer .footer-below {
+    padding: 25px 0;
+    background-color: #{{ site.color.secondary-dark }};
+}
+
+.btn-social {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+.btn:focus,
+.btn:active,
+.btn.active {
+    outline: 0;
+}
+
+.scroll-top {
+    z-index: 1049;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    width: 50px;
+    height: 50px;
+}
+
+.scroll-top .btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.scroll-top .btn:focus {
+    outline: 0;
+}
+
+.portfolio-modal .modal-content {
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.portfolio-modal .modal-content h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.portfolio-modal .modal-content img {
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .modal-content .item-details {
+    margin: 30px 0;
+}
+
+.portfolio-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.portfolio-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.portfolio-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #{{ site.color.secondary }};
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.portfolio-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #{{ site.color.secondary }};
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.navbar-nav>.active>a {
+    background-color: #{{ site.color.secondary-dark }} !important;
+}
+
+.main-contact {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+/* Fix modal mouse wheel issues */
+/* https://github.com/twbs/bootstrap/issues/16297 */
+.modal.fade.in {
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
