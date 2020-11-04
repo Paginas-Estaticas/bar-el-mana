@@ -9,8 +9,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ site.baseurl }}/index.html#page-top">
-                    <img src="{{ site.baseurl }}/img/logo.png" class="logo align-items-center align-top" alt="">{{ site.title }}
+                <a class="navbar-brand" href="{{ '#page-top' | relative_url }}">
+                    <img src="{{ '/img/logo.png' | relative_url }}" class="logo align-items-center align-top" alt="">{{ site.title }}
                 </a>
             </div>
 
@@ -18,22 +18,22 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
-                        <a href="{{ site.baseurl }}/index.html#page-top"></a>
+                        <a href="{{ '#page-top' | relative_url }}"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">Nuestra Historia</a>
+                        <a href="{{ '#about' | relative_url }}">Nuestra Historia</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#menu">Carta</a>
+                        <a href="{{ '#menu' | relative_url }}">Carta</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#events">Eventos</a>
+                        <a href="{{ '#events' | relative_url }}">Eventos</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#gallery">Galería</a>
+                        <a href="{{ '#gallery' | relative_url }}">Galería</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact">Contacto</a>
+                        <a href="{{ '#contact' | relative_url }}">Contacto</a>
                     </li>
                 </ul>
             </div>
