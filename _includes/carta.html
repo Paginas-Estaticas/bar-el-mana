@@ -1,38 +1,44 @@
+<!-- Portfolio Grid Section -->
 
-    <!-- Portfolio Grid Section -->
-    <section class="section-carta" id="menu">
-        <div class="container portfolio-flex-grid">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Carta El Maná</h2>
-                    <hr class="flamingo-black">
-                </div>
-            </div>
-            <div class="portfolio-flex-row">
+<section class="section-carta" id="menu">
+    <div class="container">
 
-                <div class="portfolio-flex-item portfolio-item">
+        <div class="row d-flex align-items-center">
+            <h2 class="text-center">Carta El Maná</h2>
+            <hr class="flamingo-black">
+
+            <div class="col-sm-12 col-md-6">
+
+                <div class="card mb-4">
                     <a href="{{ '/beers/' | relative_url }}" class="portfolio-link">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="{{ '/img/portfolio/beers.jpg' | relative_url }}" class="img-responsive menu-img" alt="beers">
+                        <img src="{{ '/img/portfolio/beers.jpg' | relative_url }}" class="img-responsive menu-img"
+                             alt="beers">
                         <span class="img-title-menu">Cervezas Artesanas</span>
                     </a>
                 </div>
 
-                <div class="portfolio-flex-item portfolio-item">
+            </div>
+
+            <div class="col-sm-12 col-md-6">
+                <div class="card">
                     <a href="{{ '/cocktails/' | relative_url }}" class="portfolio-link">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="{{ '/img/portfolio/cocktails.jpg' | relative_url }}" class="img-responsive menu-img" alt="cocktails">
+                        <img src="{{ '/img/portfolio/cocktails.jpg' | relative_url }}" class="img-responsive menu-img"
+                             alt="cocktails">
                         <span class="img-title-menu">Cócteles</span>
                     </a>
                 </div>
             </div>
+
         </div>
-    </section>
+    </div>
+</section>
